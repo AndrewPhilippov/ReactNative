@@ -1,5 +1,5 @@
-import React                      from 'react'
-import { Text, StyleSheet, View,TouchableHighlight } from 'react-native'
+import React                                          from 'react'
+import { Text, StyleSheet, View, TouchableHighlight } from 'react-native'
 
 const ComponentsScreen = () => {
 	const myName = 'Andrew'
@@ -7,12 +7,7 @@ const ComponentsScreen = () => {
 	return (
 		<View>
 			<Text style={ styles.textStyle }>This is the ComponentsScreen</Text>
-			<TouchableHighlight
-				activeOpacity={0.6}
-				underlayColor="#DDDDDD"
-				onPress={() => alert('Pressed!' +  myName)}>
-				<Text style={ styles.nameStyle }>2d Line of the Text { myName }</Text>
-			</TouchableHighlight>;
+			<Text style={ styles.nameStyle }>2d Line of the Text { myName }</Text>
 		</View>
 	)
 }
